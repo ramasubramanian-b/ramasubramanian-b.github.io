@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramasubramanian (Ram) | Finance & Accounts Professional</title>
+  <meta name="description" content="Portfolio of Ramasubramanian (Ram) - Finance & Accounts Professional with 10+ years of experience in AR, AP, GL, BRS, US Payroll, P&L, and Financial Statements." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-page: #111622;
+      --bg-card: #161c28;
+      --bg-card-alt: #1c2434;
+      --border-color: #2a3447;
+      --text-primary: #f1f5f9;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --accent-gold: #d4af37;
+      --accent-teal: #2dd4bf;
+      --btn-primary: #1e293b;
+      --btn-hover: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-secondary);
+      line-height: 1.75;
+      font-size: 16px;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+    }
+
+    /* Hero Banner */
+    .hero {
+      background: linear-gradient(135deg, #0f172a 0%, #161c28 60%, #1e293b 100%);
+      padding: 3.5rem 2.5rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      color: var(--accent-gold);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      color: var(--text-primary);
+      font-size: 2.35rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero .subtitle {
+      color: var(--accent-gold);
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 0.65rem;
+    }
+
+    .hero .skills-bar {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+    }
+
+    /* Main Content Sections */
+    .content {
+      padding: 2.5rem;
+    }
+
+    section {
+      margin-bottom: 2.25rem;
+    }
+
+    .section-title {
+      text-align: center;
+      color: var(--accent-gold);
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1.15rem;
+      color: var(--text-secondary);
+    }
+
+    strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: var(--border-color);
+      margin: 2.5rem 0;
+    }
+
+    /* What I Bring Grid */
+    .bring-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.1rem;
+    }
+
+    .bring-item {
+      background-color: var(--bg-card-alt);
+      border: 1px solid var(--border-color);
+      border-left: 3px solid var(--accent-gold);
+      border-radius: 8px;
+      padding: 1.1rem 1.35rem;
+    }
+
+    .bring-item h3 {
+      color: var(--text-primary);
+      font-size: 1.02rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+
+    .bring-item p {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+    }
+
+    /* Vision Quote Box */
+    .vision-box {
+      background: rgba(212, 175, 55, 0.07);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 1.25rem;
+      color: var(--text-primary);
+      font-weight: 500;
+      text-align: center;
+    }
+
+    /* Core Competencies Table */
+    .table-wrapper {
+      overflow-x: auto;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.93rem;
+    }
+
+    thead {
+      background-color: #0f172a;
+    }
+
+    th {
+      color: var(--accent-gold);
+      font-weight: 600;
+      padding: 1rem;
+      border-bottom: 1px solid var(--border-color);
+      border-right: 1px solid var(--border-color);
+    }
+
+    td {
+      padding: 0.9rem 1rem;
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border-color);
+      border-right: 1px solid var(--border-color);
+    }
+
+    th:last-child, td:last-child {
+      border-right: none;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.02);
+    }
+
+    /* Contact & Footer */
+    .contact-section {
+      text-align: center;
+      padding-top: 0.5rem;
+    }
+
+    .connect-heading {
+      color: var(--text-primary);
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.85rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.7rem 1.45rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      background-color: var(--btn-primary);
+      border: 1px solid var(--border-color);
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--btn-hover);
+      border-color: var(--accent-gold);
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background-color: var(--accent-gold);
+      color: #0f172a;
+      border-color: var(--accent-gold);
+    }
+
+    .btn-primary:hover {
+      background-color: #e5c158;
+      color: #0f172a;
+    }
+
+    .contact-details {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .contact-details a {
+      color: var(--text-primary);
+      text-decoration: none;
+    }
+
+    .contact-details a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 2.5rem 1.25rem;
+      }
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      .content {
+        padding: 1.75rem 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <!-- Header / Hero -->
+    <header class="hero">
+      <div class="hero-badge">10+ Years Experience • Remote Finance Specialist</div>
+      <h1>Ramasubramanian (Ram)</h1>
+      <div class="subtitle">Finance &amp; Accounts Professional</div>
+      <div class="skills-bar">AR &nbsp;|&nbsp; AP &nbsp;|&nbsp; GL &nbsp;|&nbsp; BRS &nbsp;|&nbsp; US Payroll &nbsp;|&nbsp; P&amp;L &nbsp;|&nbsp; FS</div>
+    </header>
+
+    <div class="content">
+      <!-- About Me -->
+      <section id="about">
+        <h2 class="section-title">*** About Me ***</h2>
+        <p>I am a <strong>results-oriented Finance &amp; Accounts Professional with 10+ years of experience</strong> in accounting, financial operations, Accounts Receivable, Accounts Payable, General Ledger, bank reconciliation, payroll support, invoicing, financial reporting, and day-to-day finance operations.</p>
+        <p>Throughout my career, I have gained experience across diverse industries, including <strong>Information Technology, Consulting, Staffing, Shipping &amp; Logistics, Container Manufacturing, Construction, and Stone-based industries</strong>. This cross-industry exposure has helped me develop a strong understanding of different business models, accounting processes, operational requirements, and financial controls.</p>
+        <p>A significant part of my professional journey has been in <strong>fully remote work environments</strong>. Out of my 10+ years of overall experience, I have <strong>more than 6 years of hands-on experience working in a pure remote-based setup, supporting U.S. clients and collaborating with geographically distributed teams</strong>.</p>
+        <p>My remote work experience has strengthened my ability to work independently, manage priorities, meet deadlines across time zones, communicate effectively with clients and stakeholders, and maintain consistent productivity and accountability without direct supervision.</p>
+        <p>My core expertise includes <strong>Accounts Receivable (AR), Accounts Payable (AP), General Ledger (GL), Bank Reconciliation, Payroll, Invoicing, Payment Processing, Account Reconciliation, Month-End Closing, and Financial Reporting</strong>. I focus on maintaining accurate financial records, resolving discrepancies, improving accounting processes, and ensuring financial transactions are completed accurately and on time.</p>
+        <p>I have hands-on experience with accounting and business systems including <strong>Tally Prime, QuickBooks, Microsoft Dynamics 365, Oracle PeopleSoft, Zoho Books, Microsoft Excel, and Microsoft 365</strong>. I am comfortable working with both established accounting environments and evolving business processes.</p>
+        <p>My professional approach is built around <strong>accuracy, integrity, ownership, continuous improvement, accountability, and attention to detail</strong>. I believe a strong finance professional should not simply record numbers but should understand the story behind those numbers and contribute to better financial and business decisions.</p>
+      </section>
+
+      <hr />
+
+      <!-- What I Bring -->
+      <section id="what-i-bring">
+        <h2 class="section-title">*** What I Bring ***</h2>
+        <div class="bring-list">
+          <div class="bring-item">
+            <h3>10+ Years of Finance &amp; Accounts Experience</h3>
+            <p>Extensive experience across accounting, financial operations, reporting, reconciliation, invoicing, payroll support, and business finance processes.</p>
+          </div>
+          <div class="bring-item">
+            <h3>6+ Years of Pure Remote Work Experience</h3>
+            <p>More than six years of experience working in a fully remote environment, supporting <strong>U.S. clients</strong>, managing responsibilities independently, and collaborating with teams across different locations and time zones.</p>
+          </div>
+          <div class="bring-item">
+            <h3>Strong Accounting Expertise</h3>
+            <p>Hands-on experience in <strong>AR, AP, GL, bank reconciliation, account reconciliation, invoicing, collections, payment processing, payroll support, month-end closing, and financial reporting</strong>.</p>
+          </div>
+          <div class="bring-item">
+            <h3>Multi-Industry Exposure</h3>
+            <p>Professional experience across <strong>IT, Consulting, Staffing, Shipping &amp; Logistics, Container Manufacturing, Construction, and Stone-based industries</strong>.</p>
+          </div>
+          <div class="bring-item">
+            <h3>Accounting &amp; ERP Systems</h3>
+            <p>Practical experience with <strong>Tally Prime, QuickBooks, Microsoft Dynamics 365, Oracle PeopleSoft, Zoho Books, Microsoft Excel, and Microsoft 365</strong>.</p>
+          </div>
+          <div class="bring-item">
+            <h3>Process Improvement</h3>
+            <p>Experience in identifying process gaps, resolving accounting discrepancies, developing SOPs, improving workflows, and supporting efficient finance operations.</p>
+          </div>
+          <div class="bring-item">
+            <h3>Remote &amp; Cross-Functional Collaboration</h3>
+            <p>Strong ability to communicate and coordinate with clients, management, finance teams, and cross-functional stakeholders while maintaining accountability and timely delivery.</p>
+          </div>
+          <div class="bring-item">
+            <h3>Accuracy &amp; Financial Discipline</h3>
+            <p>Committed to maintaining accurate financial records, following established controls and processes, meeting deadlines, and ensuring a high level of financial data integrity.</p>
+          </div>
+          <div class="bring-item">
+            <h3>Continuous Learning &amp; Growth</h3>
+            <p>Focused on continuously developing my knowledge of accounting, finance, technology, financial analysis, business operations, and leadership.</p>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Professional Goal -->
+      <section id="goal">
+        <h2 class="section-title">*** My Professional Goal ***</h2>
+        <p>My long-term professional goal is to become a <strong>Chief Financial Officer (CFO) of an organization</strong>, where I can combine my experience in Finance &amp; Accounts, financial operations, accounting systems, process improvement, and business operations with strategic financial leadership.</p>
+        <p>I aspire to progress through <strong>Senior Finance, Team Lead, Assistant Manager, Manager, and senior finance leadership roles</strong>, continuously strengthening my expertise in <strong>Financial Planning &amp; Analysis (FP&amp;A), budgeting, forecasting, financial reporting, risk management, compliance, financial strategy, and business decision-making</strong>.</p>
+        <p>My ultimate objective is to become a finance leader who can go beyond accounting and contribute to the <strong>overall financial health, profitability, operational efficiency, sustainable growth, and strategic direction of an organization</strong>.</p>
+        <p>I believe my journey toward becoming a CFO is built on three pillars: <strong>Strong Accounting Foundation, Strategic Financial Thinking, and Leadership Excellence</strong>.</p>
+        <div class="vision-box">
+          My vision is to grow from managing financial transactions to managing financial strategy — and ultimately to becoming a trusted financial leader who helps an organization grow, perform, and succeed.
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Core Competencies Table -->
+      <section id="competencies">
+        <h2 class="section-title">*** Core Accounting Matrix ***</h2>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Bookkeeping &amp; Core Accounting</th>
+                <th>General Ledger (GL)</th>
+                <th>Financial Reporting &amp; Reconciliation</th>
+                <th>Reconciliation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>AR Billing &amp; Cash Applications</td>
+                <td>Journal Entries</td>
+                <td>P&amp;L Preparation</td>
+                <td>Bank Reconciliation</td>
+              </tr>
+              <tr>
+                <td>AP Bills &amp; Vendor Payments</td>
+                <td>Ledger Posting</td>
+                <td>Cash Flow Statement</td>
+                <td>Ledger Reconciliation</td>
+              </tr>
+              <tr>
+                <td>3-Way Matching</td>
+                <td>Accruals</td>
+                <td>Month/Year-End Closing</td>
+                <td>Account-Wise Reconciliation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="btn-group">
+          <a href="mailto:YOUR_EMAIL@gmail.com" class="btn btn-primary">Contact Me</a>
+        </div>
+
+        <div class="connect-heading">Let's stay connected!</div>
+
+        <div class="btn-group">
+          <a href="https://wa.me/917358191951" target="_blank" rel="noopener noreferrer" class="btn">WhatsApp</a>
+          <a href="mailto:YOUR_EMAIL@gmail.com" class="btn">Email</a>
+          <a href="https://www.linkedin.com/in/ramasubramanian-b-9a77b5ab" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn</a>
+        </div>
+
+        <div class="contact-details">
+          <strong>+91 7358191951</strong> &nbsp;•&nbsp; <a href="mailto:YOUR_EMAIL@gmail.com">YOUR_EMAIL@gmail.com</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+</body>
+</html>
