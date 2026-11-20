@@ -612,7 +612,6 @@ footer{padding:1.5rem 0;font:400 .9rem var(--sans);color:var(--muted)}
       <div class="nav-right">
         <nav aria-label="Sections">
           <a href="#about">About</a>
-          <a href="#experience">Experience</a>
           <a href="#expertise">Expertise</a>
           <a href="#certifications">Certifications</a>
           <a href="#contact">Contact</a>
@@ -637,7 +636,7 @@ footer{padding:1.5rem 0;font:400 .9rem var(--sans);color:var(--muted)}
         <p class="role">Finance &amp; Accounts Professional · Client Accounting &amp; Advisory Services (CAS)</p>
         <p class="lede">I keep the books accurate and the month-end close on time. 10+ years across accounts receivable, accounts payable, general ledger, and US payroll—including 6+ years fully remote supporting US clients.</p>
         <div class="btns">
-          <a class="btn main" href="#experience" id="seeExpBtn">See my experience</a>
+          <a class="btn main" href="#expertise" id="seeExpBtn">Explore my expertise</a>
           <a class="btn ghost" href="#certifications">View badges</a>
           <button type="button" class="btn ghost" id="printBtn">Print / Save PDF</button>
         </div>
@@ -672,56 +671,6 @@ footer{padding:1.5rem 0;font:400 .9rem var(--sans);color:var(--muted)}
           <li><strong>Multi-industry depth:</strong> IT, consulting, staffing, shipping, manufacturing, and construction.</li>
         </ul>
       </div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <div class="sec-head rv">
-      <div class="exp-title-row">
-        <h2>Experience</h2>
-        <button type="button" class="exp-toggle" id="expToggle" aria-expanded="false" aria-controls="expBody" aria-label="Expand or collapse experience">+</button>
-      </div>
-      <div class="filters" role="group" aria-label="Filter experience by work mode">
-        <button type="button" class="f-btn active" data-filter="all">All (6)</button>
-        <button type="button" class="f-btn" data-filter="Remote">Remote (2)</button>
-        <button type="button" class="f-btn" data-filter="Hybrid">Hybrid (1)</button>
-        <button type="button" class="f-btn" data-filter="On-site">On-site (3)</button>
-      </div>
-    </div>
-    <div class="exp-body collapsed" id="expBody">
-    <ol class="tl" id="timeline">
-      <li class="rv" data-mode="Remote" style="--c:var(--teal)">
-        <h3>Moksh Corp<span class="tag">Remote</span></h3>
-        <div class="meta">Apr 2026 – Aug 2026 · Ahmedabad</div>
-        <p>Accounts receivable, bank reconciliation (BRS)</p>
-      </li>
-      <li class="rv" data-mode="On-site" style="--c:var(--coral)">
-        <h3>Realtekh Software Services<span class="tag">On-site</span></h3>
-        <div class="meta">Oct 2025 – Nov 2025 · Chennai</div>
-        <p>Accounts receivable, accounts payable</p>
-      </li>
-      <li class="rv" data-mode="Hybrid" style="--c:var(--amber)">
-        <h3>Future Focus InfoTech Pvt Ltd<span class="tag">Hybrid</span></h3>
-        <div class="meta">May 2024 – Sep 2025 · Chennai</div>
-        <p>AR, AP, US payroll, general ledger, bank reconciliation (BRS)</p>
-      </li>
-      <li class="rv" data-mode="Remote" style="--c:var(--teal)">
-        <h3>Tekplay Systems Ltd<span class="tag">Remote</span></h3>
-        <div class="meta">Jul 2018 – Apr 2024 · Chennai</div>
-        <p>AR, AP, US payroll, general ledger, bank reconciliation (BRS)</p>
-        <div class="team">Guided a team of 8 to 12 in daily accounting operations</div>
-      </li>
-      <li class="rv" data-mode="On-site" style="--c:var(--coral)">
-        <h3>PIL India Private Ltd<span class="tag">On-site</span></h3>
-        <div class="meta">Nov 2017 – Jul 2018 · Chennai</div>
-        <p>AR, AP, bank reconciliation (BRS)</p>
-      </li>
-      <li class="rv" data-mode="On-site" style="--c:var(--coral)">
-        <h3>UST Global<span class="tag">On-site</span></h3>
-        <div class="meta">Jun 2015 – Sep 2017 · Trivandrum</div>
-        <p>Accounts payable, bank reconciliation (BRS)</p>
-      </li>
-    </ol>
     </div>
   </section>
 
@@ -777,7 +726,7 @@ footer{padding:1.5rem 0;font:400 .9rem var(--sans);color:var(--muted)}
     <div class="advisory rv">
       <div>
         <h3>Client Accounting &amp; Advisory Services (CAS)</h3>
-        <p>With prior experience in accounting and outsourcing firms (Moksh Accountants), I actively engage with clients to deliver Client Accounting &amp; Advisory Services—combining accurate day-to-day bookkeeping with practical financial guidance.</p>
+        <p>With prior experience in accounting and outsourcing firms, I actively engage with clients to deliver Client Accounting &amp; Advisory Services—combining accurate day-to-day bookkeeping with practical financial guidance.</p>
       </div>
       <a class="btn main" href="#contact">Connect with me</a>
     </div>
@@ -878,7 +827,6 @@ footer{padding:1.5rem 0;font:400 .9rem var(--sans);color:var(--muted)}
 <section id="contact" class="contact">
   <div class="wrap">
     <h2>Get in touch</h2>
-    <p>I’m open to remote finance &amp; accounts roles and Client Accounting &amp; Advisory Services (CAS) engagements. Email, call, WhatsApp, or message me on LinkedIn.</p>
     <div class="links">
       <a href="mailto:Ram.subramanian21@gmail.com">
         <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -945,45 +893,6 @@ footer{padding:1.5rem 0;font:400 .9rem var(--sans);color:var(--muted)}
   });
 
   // Experience expand/collapse (+/-)
-  var expToggle = document.getElementById('expToggle');
-  var expBody = document.getElementById('expBody');
-  function setExpOpen(open){
-    if(open){
-      expBody.classList.remove('collapsed');
-      expToggle.textContent = '−';
-      expToggle.setAttribute('aria-expanded', 'true');
-    } else {
-      expBody.classList.add('collapsed');
-      expToggle.textContent = '+';
-      expToggle.setAttribute('aria-expanded', 'false');
-    }
-  }
-  expToggle.addEventListener('click', function(){
-    setExpOpen(expBody.classList.contains('collapsed'));
-  });
-  document.querySelectorAll('a[href="#experience"]').forEach(function(link){
-    link.addEventListener('click', function(){ setExpOpen(true); });
-  });
-
-  // Experience filter
-  var filterBtns = document.querySelectorAll('.f-btn');
-  var roles = document.querySelectorAll('#timeline li');
-  filterBtns.forEach(function(btn){
-    btn.addEventListener('click', function(){
-      setExpOpen(true);
-      var f = btn.getAttribute('data-filter');
-      filterBtns.forEach(function(b){ b.classList.remove('active'); });
-      btn.classList.add('active');
-      roles.forEach(function(item){
-        if(f === 'all' || item.getAttribute('data-mode') === f){
-          item.classList.remove('hidden');
-        } else {
-          item.classList.add('hidden');
-        }
-      });
-    });
-  });
-
   // Copy to clipboard with fallback + toast
   var toast = document.getElementById('toast');
   var toastTimer = null;
